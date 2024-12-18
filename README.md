@@ -318,7 +318,7 @@ PUT http://DBHOST:PORT/api/v1/user/updateNameBysid
 
 ## 流程圖/架構圖
 
-<img src= "" width="500" alt="">
+<img src= "https://github.com/YIiiiiiiiiiiiiiii/StudentHub/blob/main/image/%E6%B4%BB%E5%8B%95%E5%9C%96.png" width="500" alt="">
 
 ## demo video
 ## [demo影片](https://www.youtube.com/watch?v=kQAoRA4i_sE)
