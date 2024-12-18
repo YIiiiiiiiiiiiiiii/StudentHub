@@ -36,8 +36,8 @@ npm run dev
 ```
 - 運行後在`orm\schemas`內的`studentSchemas`會對應著MongoDB connections
 
-<img src= "https://github.com/YIiiiiiiiiiiiiiii/StudentHub/blob/main/image/code%20.png" width="300"  alt="">
-<img src= "https://github.com/YIiiiiiiiiiiiiiii/StudentHub/blob/main/image/MongoDB%20students.png" width="300" alt="">
+<img src= "https://github.com/YIiiiiiiiiiiiiiii/StudentHub/blob/main/image/code%20.png" width="500"  alt="">
+<img src= "https://github.com/YIiiiiiiiiiiiiiii/StudentHub/blob/main/image/MongoDB%20students.png" width="500" alt="">
 
 ### 資料庫
 
@@ -316,9 +316,9 @@ PUT http://DBHOST:PORT/api/v1/user/updateNameBysid
 ```
 
 
-## 架構圖
+## 流程圖/架構圖
 
-## 流程圖
+<img src= "" width="500" alt="">
 
 ## demo video
 ## [demo影片](https://www.youtube.com/watch?v=kQAoRA4i_sE)
