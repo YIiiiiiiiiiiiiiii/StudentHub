@@ -36,8 +36,8 @@ npm run dev
 ```
 - 運行後在`orm\schemas`內的`studentSchemas`會對應著MongoDB connections
 
-<img src= "code.png" width="300"  alt="">
-<img src= "MongoDB students.png" width="300" alt="">
+<img src= "https://github.com/YIiiiiiiiiiiiiiii/StudentHub/blob/main/image/code%20.png" width="300"  alt="">
+<img src= "https://github.com/YIiiiiiiiiiiiiiii/StudentHub/blob/main/image/MongoDB%20students.png" width="300" alt="">
 
 ### 資料庫
 

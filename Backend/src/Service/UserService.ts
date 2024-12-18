@@ -151,7 +151,7 @@ export class UserService extends Service {
             message: "",
             body: undefined
         }
-    
+
         try {
             const res = await studentsModel.deleteOne({ sid: sid });
             if (res.deletedCount > 0) {
@@ -165,7 +165,7 @@ export class UserService extends Service {
             resp.message = error as string;
             resp.code = 500;
         }
-    
+
         return resp;
     }
 
@@ -176,36 +176,36 @@ export class UserService extends Service {
      * @returns 狀態
      */
     public async updateNameBysid(sid: string, updateData: Partial<Student>) {
-    const resp: resp<DBResp<Student> | undefined> = {
-        code: 200,
-        message: "",
-        body: undefined
-    }
-
-    const user = await studentsModel.findOne({ sid: sid });
-
-    if (user) {
-        try {
-            // 更新所有字段
-            if (updateData.name) user.name = updateData.name;
-            if (updateData.department) user.department = updateData.department;
-            if (updateData.grade) user.grade = updateData.grade;
-            if (updateData.class) user.class = updateData.class;
-            if (updateData.Email) user.Email = updateData.Email;
-            if (updateData.absences !== undefined) user.absences = updateData.absences;
-
-            await user.save();
-            resp.body = user;
-            resp.message = "update success";
-        } catch (error) {
-            resp.code = 500;
-            resp.message = "server error";
+        const resp: resp<DBResp<Student> | undefined> = {
+            code: 200,
+            message: "",
+            body: undefined
         }
-    } else {
-        resp.code = 404;
-        resp.message = "user not found";
-    }
 
-    return resp;
-}
+        const user = await studentsModel.findOne({ sid: sid });
+
+        if (user) {
+            try {
+                // 更新所有字段
+                if (updateData.name) user.name = updateData.name;
+                if (updateData.department) user.department = updateData.department;
+                if (updateData.grade) user.grade = updateData.grade;
+                if (updateData.class) user.class = updateData.class;
+                if (updateData.Email) user.Email = updateData.Email;
+                if (updateData.absences !== undefined) user.absences = updateData.absences;
+
+                await user.save();
+                resp.body = user;
+                resp.message = "update success";
+            } catch (error) {
+                resp.code = 500;
+                resp.message = "server error";
+            }
+        } else {
+            resp.code = 404;
+            resp.message = "user not found";
+        }
+
+        return resp;
+    }
 }
