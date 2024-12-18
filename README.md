@@ -103,7 +103,7 @@ Get http://DBHOST:PORT/api/v1/user/findAll
 ```
 - code 500:  
 
-    ```
+```
     {
         "code": 500,
         "message": "server error"
